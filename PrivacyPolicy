@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bs">
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy - Driving Test App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravila privatnosti - AEHEMA aplikacija za vozački ispit</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.7;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0D1B2A, #1B263B, #4B0082);
-            color: #ffffff;
-            font-weight: bold;
-            line-height: 1.6;
-            padding: 40px;
+            padding: 40px 20px;
         }
 
-        h1, h2 {
-            font-weight: bold;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
 
         h1 {
-            font-size: 2.5em;
-            text-align: center;
-            margin-bottom: 1em;
+            font-size: 28px;
+            color: #1e293b;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #0f172a;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 10px;
         }
 
         p, ul {
-            font-size: 1.1em;
+            font-size: 15px;
+            color: #475569;
         }
 
         ul {
@@ -35,75 +51,108 @@
         }
 
         li {
-            margin-bottom: 0.5em;
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #0f172a;
         }
 
         a {
-            color: #ffffff; 
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
             text-decoration: underline;
         }
 
-        hr {
-            border: 0.5px solid #ffffff;
-            margin: 2em 0;
+        .uputstvo-box {
+            background-color: #f1f5f9;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin-top: 15px;
         }
 
-        p.footer {
-            font-size: 0.9em;
+        .uputstvo-box ol {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+
+        .footer {
+            font-size: 13px;
+            color: #94a3b8;
             text-align: center;
-            margin-top: 1em;
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy</h1>
+<div class="container">
+    <h1>Pravila privatnosti</h1>
+    <p><strong>AEHEMA aplikacija za vozački ispit</strong> („mi“, „naše“, „aplikacija“) poštuje vašu privatnost. Ova Pravila privatnosti objašnjavaju kako postupamo s vašim podacima i pružaju informacije o uslugama trećih strana koje se koriste unutar aplikacije.</p>
 
-    <p><strong>Driving Test App</strong> (“we”, “our”, “the app”) respects your privacy. This Privacy Policy explains how we handle your information.</p>
+    <h2>1. Podaci koje prikupljamo</h2>
+    <p>Ova aplikacija radi potpuno <strong>offline</strong>. Aplikacija sama po sebi ne zahtijeva registraciju, kreiranje korisničkog računa, niti izravno prikuplja, pohranjuje ili dijeli vaše lične podatke (poput imena, prezimena, email adrese, lozinke ili broja telefona).</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>This app does <strong>not collect, store, or share any personal information</strong>. You can use the app completely without providing any data.</p>
-
-    <h2>2. Content and Data Sources</h2>
-    <p>All questions, answers, and image assets used in this app are based on <strong>publicly available and government-provided materials</strong> for driving theory tests.</p>
-
+    <h2>2. Usluge trećih strana i automatsko prikupljanje podataka</h2>
+    <p>Aplikacija je razvijena pomoću razvojnog inženjerstva (game engine) <strong>Unity</strong> i distribuira se putem trgovine <strong>Google Play</strong>. Iako je aplikacija offline karaktera, ove platforme trećih strana mogu automatski pristupiti određenim tehničkim i dijagnostičkim podacima u trenucima kada je vaš uređaj povezan na mrežu, isključivo radi stabilnosti i optimizacije:</p>
     <ul>
-        <li>The content is intended for educational and practice purposes only</li>
-        <li>We do not claim ownership of official government materials</li>
-        <li>All materials are used to help users prepare for driving exams</li>
+        <li><strong>Google Play usluge:</strong> Mogu prikupljati anonimne dijagnostičke podatke, podatke o performansama uređaja i mrežne identifikatore.</li>
+        <li><strong>Unity Engine:</strong> Može automatski zabilježiti tehničke podatke o uređaju (npr. model uređaja, operativni sistem, IP adresu, jedinstvene oglašivačke identifikatore poput Google Advertising ID-a, te izvještaje o rušenju aplikacije - crash logs) u svrhu praćenja grešaka i optimizacije rada motora.</li>
     </ul>
 
-    <h2>3. Third-Party Services</h2>
-    <p>The app may use third-party services provided by Google, such as:</p>
+    <h2>3. Zdravstveni podaci (Health Data Declaration)</h2>
+    <p>Ova aplikacija <strong>ne pristupa, ne prikuplja, ne pohranjuje niti dijeli</strong> bilo kakve zdravstvene, medicinske ili fitness podatke.</p>
 
+    <h2>4. Zadržavanje i brisanje podataka (Data Retention & Deletion)</h2>
+    <p>Budući da sami ne prikupljamo vaše lične podatke na eksternim serverima, ne posjedujemo nikakvu korisničku bazu podataka. Svi vaši lični rezultati vježbanja i napredak kroz aplikaciju čuvaju se <strong>isključivo lokalno na vašem uređaju</strong>.</p>
+    
+    <p>U skladu sa zvaničnim pravilima privatnosti platforme Unity, tehnički podaci, anonimni identifikatori i izvještaji o greškama zadržavaju se **najduže do 90 dana**, nakon čega se automatski brišu ili trajno anonimiziraju od strane Unity sistema.</p>
+
+    <div class="uputstvo-box">
+        <strong>Kako da sami obrišete sve lokalne podatke:</strong>
+        <p>Budući da aplikacija nema login sistem, sve podatke možete u svakom trenutku trajno ukloniti sami sa svog uređaja prateći ove korake:</p>
+        <ol>
+            <li>Otvorite <strong>Postavke (Settings)</strong> na svom Android telefonu.</li>
+            <li>Idite na <strong>Aplikacije (Apps)</strong> i izaberite aplikaciju <strong>AEHEMA</strong>.</li>
+            <li>Kliknite na <strong>Spremište / Pohrana (Storage)</strong>.</li>
+            <li>Odaberite opcije <strong>Obriši podatke (Clear Data)</strong> i <strong>Obriši keš (Clear Cache)</strong>.</li>
+        </ol>
+    </div>
+
+    <p>Ako smatrate da su bilo kakve informacije greškom povezane s vama ili želite zatražiti brisanje podataka koje su prikupile integrisane usluge trećih strana, možete nas kontaktirati putem e-pošte na: <a href="mailto:dincicode@hotmail.com">dincicode@hotmail.com</a>.</p>
+
+    <h2>5. Sadržaj i izvori podataka</h2>
+    <p>Sva pitanja, odgovori i slike korištene u ovoj aplikaciji temelju se na javno dostupnim i od strane zvaničnih državnih institucija pruženim materijalima za teorijske vozačke ispite u regiji Balkana.</p>
     <ul>
-        <li>Google Play Services</li>
-        <li>Crash reporting tools (if applicable)</li>
+        <li>Sadržaj je namijenjen isključivo za edukaciju, vježbu i pomoć pri učenju.</li>
+        <li>Ne polažemo pravo vlasništva nad službenim državnim materijalima i testovima.</li>
+        <li>Svi materijali se koriste isključivo s ciljem olakšavanja pripreme korisnika za polaganje vozačkog ispita.</li>
     </ul>
 
-    <p>These services may collect limited, non-personal technical data according to their own privacy policies.</p>
+    <h2>6. Privatnost djece</h2>
+    <p>Ova aplikacija nije namijenjena djeci mlađoj od 13 godina. Svjesno ne prikupljamo niti tražimo bilo kakve podatke od djece.</p>
 
-    <h2>4. Data Security</h2>
-    <p>Since the app does not collect personal data, no personal information is stored or processed by the app.</p>
+    <h2>7. Odricanje od odgovornosti (Disclaimer)</h2>
+    <p>Ova aplikacija je nezavisni edukativni alat i <strong>nije povezana, sponzorisana, niti odobrena od strane bilo koje državne institucije, ministarstva ili zvanične ispitne komisije</strong>.</p>
+    <p>Iako se sadržaj temelji na zvaničnim i javno dostupnim materijalima, korisnici bi se uvijek trebali osloniti na službene izvore i institucije za najtočnije, pravno važeće i najnovije informacije o ispitima.</p>
 
-    <h2>5. Children’s Privacy</h2>
-    <p>This app is not intended for children under the age of 13. We do not knowingly collect any data from children.</p>
+    <h2>8. Promjene ovih pravila</h2>
+    <p>S vremena na vrijeme možemo ažurirati ova Pravila privatnosti kako bismo ih uskladili sa novim verzijama aplikacije ili zakonskim regulativama. Najnovija verzija uvijek će biti javno dostupna na ovoj stranici.</p>
 
-    <h2>6. Disclaimer</h2>
-    <p>This app is an independent educational tool and is <strong>not affiliated with or endorsed by any government authority</strong>.</p>
-
-    <p>While the content is based on official materials, users should always refer to official sources for the most accurate and up-to-date information.</p>
-
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. The latest version will always be available on this page.</p>
-
-    <h2>8. Contact</h2>
-    <p>If you have any questions, you can contact us at:<br>
+    <h2>9. Kontakt</h2>
+    <p>Ako imate bilo kakvih pitanja, nejasnoća ili zahtjeva u vezi s privatnošću, možete nas kontaktirati na:<br>
     <a href="mailto:dincicode@hotmail.com">dincicode@hotmail.com</a></p>
 
-    <hr>
-
-    <p class="footer">&copy; 2026 Driving Test App. All rights reserved.</p>
+    <div class="footer">
+        &copy; 2026 AEHEMA - Dincicode. Sva prava pridržana.
+    </div>
+</div>
 
 </body>
 </html>
