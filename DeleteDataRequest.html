@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahtjev za brisanje podataka</title>
+    <title>Brisanje podataka - Zaštita privatnosti</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,18 +22,30 @@
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            max-width: 500px;
+            max-width: 550px;
             width: 100%;
         }
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             color: #2c3e50;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 14px;
             color: #555;
+            margin-bottom: 20px;
+        }
+        .uputstvo {
+            background-color: #eef2f7;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
             margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .uputstvo ol {
+            margin: 5px 0 0 20px;
+            padding: 0;
         }
         .form-group {
             margin-bottom: 20px;
@@ -44,7 +56,7 @@
             margin-bottom: 5px;
             font-size: 14px;
         }
-        input[type="email"], input[type="text"], textarea {
+        input[type="text"], textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -54,7 +66,7 @@
         }
         textarea {
             resize: vertical;
-            height: 100px;
+            height: 80px;
         }
         button {
             background-color: #e74c3c;
@@ -83,11 +95,25 @@
 <body>
 
 <div class="container">
-    <h1>Zahtjev za brisanje podataka</h1>
-    <p>U skladu sa pravilima o zaštiti privatnosti, ovdje možete podnijeti zahtjev za brisanje vašeg korisničkog računa i svih povezanih podataka iz naše aplikacije.</p>
+    <h1>Brisanje korisničkih podataka</h1>
+    
+    <p>Naša aplikacija <strong>Ime Tvoje Aplikacije</strong> je potpuno offline i <strong>ne koristi sisteme za registraciju niti login</strong>. To znači da mi ne čuvamo vaše ime, lozinku, email niti privatne podatke na našim serverima. Svi vaši podaci (napredak u igri, postavke) se čuvaju isključivo lokalno na vašem uređaju.</p>
 
-    <!-- ZAMIJENI tvoj-dincicode@hotmail.com SA SVOJIM STVARNIM EMAILOM -->
-    <form action="mailto:dincicode@hotmail.com" method="post" enctype="text/plain">
+    <div class="uputstvo">
+        <strong>Kako da sami obrišete sve podatke iz aplikacije:</strong>
+        <p>Pošto su podaci na vašem telefonu, možete ih trajno obrisati u bilo kojem trenutku prateći ove korake:</p>
+        <ol>
+            <li>Otvorite <strong>Postavke (Settings)</strong> na svom Android uređaju.</li>
+            <li>Idite na <strong>Aplikacije (Apps)</strong> i pronađite našu aplikaciju.</li>
+            <li>Kliknite na <strong>Spremište (Storage)</strong>.</li>
+            <li>Izaberite opciju <strong>Obriši podatke (Clear Data)</strong> i <strong>Obriši keš (Clear Cache)</strong>.</li>
+        </ol>
+    </div>
+
+    <p>Ukoliko želite da podnesete zahtjev za brisanje anonimnih dijagnostičkih podataka (kao što su automatski izvještaji o rušenju aplikacije koje Unity motor može zabilježiti), molimo vas da popunite formu ispod:</p>
+
+    <!-- ZAMIJENI tvoj-email@gmail.com SA SVOJIM STVARNIM EMAILOM -->
+    <form action="mailto:tvoj-email@gmail.com" method="post" enctype="text/plain">
         
         <div class="form-group">
             <label for="naziv">Naziv aplikacije:</label>
@@ -96,25 +122,21 @@
         </div>
 
         <div class="form-group">
-            <label for="email">Vaša Email adresa:</label>
-            <input type="email" id="email" name="Korisnicki_Email" placeholder="Unesite email s kojim ste se registrovali" required>
+            <label for="ID">ID oglašavanja / Google Advertising ID (opcionalno):</label>
+            <input type="text" id="ID" name="Oglašivački_ID" placeholder="Npr. 38400000-8cf0-11bd-b23e-10b96e40000d">
+            <small style="color: #7f8c8d; font-size: 11px;">Ovaj ID možete pronaći u Postavke > Privatnost > Oglasi na vašem telefonu.</small>
         </div>
 
         <div class="form-group">
-            <label for="ID">Korisničko ime ili ID računa (opcionalno):</label>
-            <input type="text" id="ID" name="Korisnicki_ID" placeholder="Npr. Marko99 ili ID iz aplikacije">
+            <label for="poruka">Dodatna napomena:</label>
+            <textarea id="poruka" name="Poruka" placeholder="Napišite ako imate dodatnih pitanja u vezi privatnosti..."></textarea>
         </div>
 
-        <div class="form-group">
-            <label for="poruka">Dodatna napomena (opcionalno):</label>
-            <textarea id="poruka" name="Poruka" placeholder="Ako želite nešto dodati..."></textarea>
-        </div>
-
-        <button type="submit">Pošalji zahtjev za brisanje</button>
+        <button type="submit">Pošalji zahtjev</button>
     </form>
 
     <div class="napomena">
-        <strong>Napomena:</strong> Klikom na dugme otvorit će se vaš email klijent. Nakon što primimo vaš email, svi vaši podaci će biti trajno obrisani u roku od 48 sati.
+        <strong>Napomena za Google Play:</strong> Klikom na dugme otvara se email klijent korisnika. Budući da aplikacija nema korisničke račune, slanje ID-a oglašavanja je jedini način da se identifikuju i obrišu eventualni anonimni analitički podaci prikupljeni od strane Unity engine-a.
     </div>
 </div>
 
