@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahtjev za brisanje podataka</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        input[type="email"], input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        .napomena {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Zahtjev za brisanje podataka</h1>
+    <p>U skladu sa pravilima o zaštiti privatnosti, ovdje možete podnijeti zahtjev za brisanje vašeg korisničkog računa i svih povezanih podataka iz naše aplikacije.</p>
+
+    <!-- ZAMIJENI tvoj-dincicode@hotmail.com SA SVOJIM STVARNIM EMAILOM -->
+    <form action="mailto:dincicode@hotmail.com" method="post" enctype="text/plain">
+        
+        <div class="form-group">
+            <label for="naziv">Naziv aplikacije:</label>
+            <!-- ZAMIJENI "Ime Tvoje Aplikacije" SA STVARNIM NAZIVOM -->
+            <input type="text" id="naziv" name="Aplikacija" value="Ime Tvoje Aplikacije" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Vaša Email adresa:</label>
+            <input type="email" id="email" name="Korisnicki_Email" placeholder="Unesite email s kojim ste se registrovali" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ID">Korisničko ime ili ID računa (opcionalno):</label>
+            <input type="text" id="ID" name="Korisnicki_ID" placeholder="Npr. Marko99 ili ID iz aplikacije">
+        </div>
+
+        <div class="form-group">
+            <label for="poruka">Dodatna napomena (opcionalno):</label>
+            <textarea id="poruka" name="Poruka" placeholder="Ako želite nešto dodati..."></textarea>
+        </div>
+
+        <button type="submit">Pošalji zahtjev za brisanje</button>
+    </form>
+
+    <div class="napomena">
+        <strong>Napomena:</strong> Klikom na dugme otvorit će se vaš email klijent. Nakon što primimo vaš email, svi vaši podaci će biti trajno obrisani u roku od 48 sati.
+    </div>
+</div>
+
+</body>
+</html>
